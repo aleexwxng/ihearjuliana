@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.envelope-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 140px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom-left-radius: 70px 50px;
+    border-bottom-right-radius: 70px 50px;
+    transform-origin: bottom;
+    transform: rotate(-45deg) translateX(-50%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lined-paper {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lined-paper p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.heart-sticker {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+.input-section input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

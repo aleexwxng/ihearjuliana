@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="envelope">
+        <div class="envelope-inner">
+            <div class="envelope-flap"></div>
+            <div class="letter">
+                <div class="lined-paper">
+                    <p id="user-message">Your message will appear here</p>
+                </div>
+            </div>
+            <div class="heart-sticker"></div>
+        </div>
+    </div>
+    <div class="input-section">
+        <input type="text" id="user-input" placeholder="Enter your message">
+        <button onclick="updateMessage()">Update Message</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
